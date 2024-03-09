@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Items</title>
-    <link rel="stylesheet" href="/assets/css/item.css">
-</head>
-<body>
-    <div class="container"> 
-        <h1>List Manager</h1>
-        <div class="input-container">
-            <input type="text" id="itemInput" placeholder="Enter an Item">
-            <button onclick="addItem()">Add Item</button>
-              
-            
-            <ul id="itemList">
-                
-            </ul>
-            
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/assets/css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <div class="login-input" style="margin-top: 30px">
+        <label for="input">User Name</label>
+        <br>
+        <input class="input" id="userName" type="text">
+      </div>
+
+      <div class="login-input" style="margin-top: 5px">
+        <label for="input">Password</label>
+        <br>
+        <input id="password" class="input" type="text">
+      </div>
+      <div class="button-container">
+        <a href="">forgot password?</a>
+        <br>
+        <input id="button-login" type="button" value="Login">
+      </div>
     </div>
-    <script src="/assets/js/item-list.js"></script>
-</body>
+    <script src="/assets/js/login.js"></script>
+  </body>
 </html>

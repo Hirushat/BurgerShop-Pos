@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    display: grid;
+    height: 100vh;
+  }
+  .header {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #19484d;
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+      justify-content: space-around;
+      align-items: center;
+  
+    &:hover.dropdown{
+      display: block;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+  
+  #name-label {
+    margin-left: 12px;
+    color: white;
+    flex-grow: 4;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-item {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    height: 40%;
+    width: 30%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #search-btn {
+    position: absolute;
+    top: 30%;
+    left: 62%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #19484d;
+    color: aliceblue;
+    cursor: pointer;
+  }
+  
+  
+  #notification-btn{
+    position: absolute;
+    top: 30%;
+    right: 19%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #19484d;
+    color: aliceblue;
+    cursor: pointer;
+  }
+  
+  #login-btn{
+    position: relative;
+    position: absolute;
+    top: 15px;
+    right: 1%;
+  }
+  
+  button {
+    padding: 1em,1.5em 1em 1em;
+    display: flex;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #19484d;
+    color: aliceblue;
+    cursor: pointer;
+  
+    span{
+      margin-left: .3em;
+    }
+  
+    &:hover {
+      .dropdown {
+        display: block;
+      }
+    }
+  }
+  
+  .notification-btn{
+    position: absolute;
+    top: 50%;
+  }
+  
+  
+  .dropdown {
+    background-color: rgb(25, 72, 77, 20%);
+    margin: 0em;
+    position: absolute;
+    top: 49px;
+    right: 0%;
+    box-sizing: border-box;
+    transform: translateY();
+    transition: tranform .5s;
+    
+  
+    ul {
+      list-style-type: none;
+      margin: 0.1em;
+      padding: 0;
+  
+      li a {
+        display: flex;
+        margin-left: 0;
+        padding: 1em;
+        text-decoration: none;
+        color: black;
+  
+        
+  
+        &:hover {
+          background-color: #19484d;
+          color: aliceblue;
+        }
+      }
+    }
+  }
